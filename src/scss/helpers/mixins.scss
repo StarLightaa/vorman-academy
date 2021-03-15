@@ -1,0 +1,31 @@
+@mixin media-max($width) {
+  @media (max-width: $width) {
+      @content;
+  }
+}
+
+@mixin media-min($width) {
+  @media (min-width: $width + 1) {
+      @content;
+  }
+}
+
+@mixin media-minmax($min-width, $max-width) {
+  @media (min-width: $min-width + 1) and (max-width: $max-width) {
+      @content;
+  }
+}
+
+@mixin focus-visible {
+  @if (&) {
+    .js-focus-visible &:focus:not(.focus-visible) {
+      @content;
+    }
+  }
+
+  @else {
+    .js-focus-visible :focus:not(.focus-visible) {
+      outline: none;
+    }
+  }
+}
