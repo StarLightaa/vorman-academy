@@ -19,6 +19,10 @@ body {
   box-sizing: border-box;
   min-height: 100%;
   font-family: $font-family-primary;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-accent;
 }
 
 img {
@@ -29,4 +33,16 @@ img {
 
 .page-content {
   flex-grow: 1;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: $color-white;
+  p {
+    margin: 0;
+    font-size: 50px;
+  }
 }

@@ -1,0 +1,64 @@
+.section-cause__container {
+  position: relative;
+  &::after {
+    content: '';
+    background-image: url('/images/common/woman-supervillain.png');
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    transform: translateY(75%);
+    width: 243px;
+    height: 243px;
+  }
+}
+
+.cause {
+  &__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    column-gap: 65px;
+    margin-bottom: 40px;
+  }
+
+  &__item:first-of-type {
+    margin-left: 28px;
+  }
+  &__item {
+    padding: 30px 30px 30px 50px;
+    border: 3px solid $color-accent;
+    border-radius: 30px;
+    position: relative;
+
+    &-img {
+      position: absolute;
+      top: 12px;
+      left: 0;
+      width: 89px;
+      height: 89px;
+      transform: translateX(-50%);
+    }
+
+    &-text {
+      font-size: 16px;
+      font-weight: 500;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.cause__footer {
+  display: flex;
+  &-text {
+    margin: 0;
+    display: inline-block;
+    margin-right: 33px;
+    width: 511px;
+    max-width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

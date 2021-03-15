@@ -7,7 +7,7 @@ const server = (callback) => {
       baseDir: config.dest.root,
     },
     files: [
-      `${config.dest.html}/*.html`,
+      `${config.dest.root}/*.html`,
       `${config.dest.css}/*.css`,
       `${config.dest.js}/*.js`,
       {

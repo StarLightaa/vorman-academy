@@ -1,3 +1,28 @@
 .btn {
   display: inline-block;
+  width: 245px;
+  max-width: 100%;
+  text-decoration: none;
+  border: 3px solid transparent;
+  border-radius: 30px;
+  color: $color-white;
+  background-color: $color-accent-light;
+  cursor: pointer;
+  padding: 17px 65px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.31;
+  transition: transform $transition-time, background-color $transition-time;
+
+  &:hover, &:focus {
+    background-color: darken($color: $color-accent-light, $amount: 7%);
+  }
+  &:active {
+    transform:scale(0.9);
+  }
+
+  &--ghost {
+    background-color: transparent;
+    border-color: $color-accent-light;
+  }
 }

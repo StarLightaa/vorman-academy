@@ -1,0 +1,15 @@
+.section {
+  padding: 180px 0;
+
+  &__title {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 66px;
+    text-align: center;
+    margin-bottom: 46px;
+    &--accent {
+      color: #504178;
+    }
+  }
+}
