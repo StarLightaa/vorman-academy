@@ -1,0 +1,31 @@
+.accordeon {
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 3px solid $color-accent;
+  text-transform: uppercase;
+
+  &:first-of-type {
+    border-top: 3px solid $color-accent;
+  }
+  &[open] &__title::after {
+    transform: rotate(45deg);
+  }
+  &__title {
+    &::marker {
+      font-size: 0;
+    }
+    padding-right: 40px;
+    position: relative;
+    &:after {
+      font-size: 30px;
+      line-height: 1;
+      content: '+';
+      position: absolute;
+      right: 8px;
+      top: 0;
+    }
+  }
+  &__item {
+  }
+}

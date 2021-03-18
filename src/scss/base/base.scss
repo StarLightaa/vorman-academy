@@ -23,12 +23,17 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: $color-accent;
+  text-transform: uppercase;
 }
 
 img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .page-content {
@@ -41,8 +46,23 @@ img {
   font-weight: 700;
   line-height: 1.35;
   color: $color-white;
+
+  @include media-max($breakpoint-sm) {
+    font-size: 16px;
+    line-height: 21px;
+  }
   p {
     margin: 0;
     font-size: 50px;
+    @include media-max($breakpoint-lg) {
+      font-size: 40px;
+    }
+    @include media-max($breakpoint-md) {
+      font-size: 32px;
+    }
+    @include media-max($breakpoint-sm) {
+      font-size: 30px;
+      line-height: 39px;
+    }
   }
 }

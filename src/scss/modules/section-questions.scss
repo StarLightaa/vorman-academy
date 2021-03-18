@@ -1,0 +1,35 @@
+.question__list {
+  margin-bottom: 60px;
+}
+
+.questions-action {
+  display: flex;
+  align-items: center;
+  row-gap: 30px;
+  @include media-max($breakpoint-sm) {
+    flex-direction: column;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    width: 46px;
+    height: 46px;
+    margin-right: 28px;
+  }
+  &__text {
+    width: 320px;
+    max-width: 100%;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    @include media-max($breakpoint-sm) {
+      width: 100%;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}

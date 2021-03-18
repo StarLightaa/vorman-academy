@@ -1,0 +1,45 @@
+.form {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+
+  color: #fff;
+  &__input {
+      display: block;
+      width: 100%;
+      background: #f7f7f7;
+      border-radius: 32px;
+      margin-bottom: 8px;
+      border: 2px solid transparent;
+      outline: none;
+
+      padding: 15px 25px;
+      max-width: 100%;
+
+      & + & {
+        margin-top: 20px;
+      }
+
+      &:focus {
+          border-color: $color-accent;
+      }
+  }
+
+  &__btn {
+      display: block;
+      margin: 0 auto;
+      box-shadow: none;
+      background: $color-accent;
+      &:hover, &:focus {
+          background-color: darken($color-accent, 5%);
+      }
+  }
+
+  &-policy {
+    display: inline-block;
+    margin-bottom: 30px;
+    &__link {
+      color: inherit;
+    }
+  }
+}

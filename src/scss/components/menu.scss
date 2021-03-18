@@ -5,6 +5,9 @@
     list-style: none;
     display: flex;
     column-gap: 27px;
+    @include media-max($breakpoint-sm) {
+      display: none;
+    }
   }
   &__item {
     color: $color-white;
@@ -12,7 +15,7 @@
   &__link {
     padding: 11px 0;
     font-size: 14px;
-    line-height: 19px;
+    line-height: 18px;
     font-weight: 700;
     color: inherit;
     text-decoration: none;

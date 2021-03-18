@@ -3,4 +3,9 @@
   font-weight: 700;
   color: $color-white;
   text-transform: uppercase;
+
+  @include media-max($breakpoint-sm) {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }

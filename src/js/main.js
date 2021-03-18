@@ -2,10 +2,12 @@ import 'focus-visible'
 import lazyImages from './modules/lazyImages';
 import documentReady from './helpers/documentReady';
 
-import test from './test';
+import popup from './popup';
+import tariff from './tariff';
 
 documentReady(() => {
   lazyImages();
 });
 
-test();
+popup();
+tariff();

@@ -1,0 +1,151 @@
+.tariff-cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 67px;
+  column-gap: 35px;
+  margin-bottom: 93px;
+  @include media-max($breakpoint-lg) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.tariff-card {
+  padding: 55px 35px;
+  border: 3px solid $color-accent;
+  border-radius: 30px;
+  width: 364px;
+  max-width: 100%;
+  color: $color-accent;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @include media-max($breakpoint-sm) {
+    padding: 55px 20px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    transform: translate(45%, -33%);
+    right: 0;
+    width: 128px;
+    object-fit: cover;
+    @include media-max($breakpoint-sm) {
+      width: 100px;
+    }
+    @include media-max(420px) {
+      transform: translate(20%, -45%);
+    }
+  }
+
+  &__title{
+    margin: 0 0 15px 0;
+    z-index: 2;
+  }
+  &__ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-grow: 1;
+    margin-bottom: 18px;
+  }
+  &__li {
+    display: flex;
+    span {
+      font-size: 25px;
+      line-height: 24px;
+      font-weight: 700;
+      margin-right: 8px;
+    }
+    & + & {
+      margin-top: 8px;
+    }
+  }
+  &__footer {
+
+  }
+  &__duration {
+    margin-bottom: 11px;
+  }
+  &__price {
+    font-weight: 700;
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &-condition {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+  &__btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    &:active {
+      transform: translate(-50%,50%) scale(0.9);
+    }
+    @include media-max($breakpoint-sm) {
+      width: 245px;
+    }
+  }
+}
+
+.tariff-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 30px;
+  row-gap: 25px;
+  @include media-max($breakpoint-md) {
+    flex-direction: column;
+  }
+
+  &__box {
+    display: flex;
+    @include media-max($breakpoint-sm) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  &__img {
+    margin-right: 30px;
+    @include media-max($breakpoint-sm) {
+      margin-bottom: 30px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 700;
+    width: 573px;
+    max-width: 100%;
+    @include media-max($breakpoint-sm) {
+      width: 100%;
+    }
+  }
+  &__btn {
+    padding: 17px 43px;
+    @include media-max($breakpoint-sm) {
+      width: 245px;
+    }
+  }
+  &__link {
+    margin-right: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    color: inherit;
+    text-decoration: none;
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+}

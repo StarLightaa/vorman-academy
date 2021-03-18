@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <section class="section section-top">
+  <section class="section section--accent section-top" id="section-top">
     <div class="container">
       <header class="header-page">
         <div class="logo">
@@ -19,27 +19,34 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#section-cause">
                 ДЛЯ КОГО?
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#section-program">
                 ЧТО БУДЕТ НА ИНТЕНСИВЕ?
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#section-about">
                 О ЮЛИИ
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#section-tariff">
                 ТАРИФЫ
               </a>
             </li>
           </ul>
         </nav>
+        <div class="header-page__burger">
+          <button class="burger-menu" type="button" data-popup="popup-menu">
+              <span class="burger-menu__box">
+                  <span class="burger-menu__inner"></span>
+              </span>
+          </button>
+      </div>
       </header>
       <div class="section-top__inner">
         <div class="section-top__content">
@@ -47,20 +54,22 @@
             ПЕРВЫЙ В МИРЕ ИНТЕНСИВ <p>ПО СКОРОСТНОМУ НАРАЩИВАНИЮ РЕСНИЦ</p>
           </h1>
           <div class="section-top__description">
-            <p>ХОЧЕшЬ НАРАЩИВАТЬ 4D ЗА 1 ЧАС?</p>
-            <p>НАУЧУ ТЕБЯ НА ИНТЕНСИВЕ 29 МАРТА</p>
+            ХОЧЕшЬ НАРАЩИВАТЬ 4D ЗА 1 ЧАС? <br>
+            НАУЧУ ТЕБЯ НА ИНТЕНСИВЕ 29 МАРТА
           </div>
           <div class="section-top__btns">
-            <a class="btn" href="#">ЗАПИСАТЬСЯ</a>
-            <button class="btn btn--ghost">ПРОГРАММА</button>
+            <a class="btn" href="#section-tariff">ЗАПИСАТЬСЯ</a>
+            <a class="btn btn--ghost" href="#section-program">ПРОГРАММА</a>
           </div>
         </div>
-        <div class="section-top__img"></div>
+        <div class="section-top__img">
+          <img src="/images/section-top/bg.png" alt="">
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section section-cause">
+  <section class="section section-cause" id="section-cause">
     <div class="container section-cause__container">
       <h2 class="section__title section__title--accent">
         ТЕБЕ НА ИНТЕНСИВ ЕСЛИ ТЫ
@@ -68,22 +77,22 @@
 
       <ul class="cause__items">
         <li class="cause__item">
-          <img class="cause__item-img" src="images/section-cause/woman-1.png" alt="" >
+          <img class="cause__item-img" src="images/section-cause/woman-1.png" alt="">
           <div class="cause__item-text">
             ЛАШМЕЙКЕР, КОТОРЫЙ ДЕЛАЕТ НАРАЩИВАНИЕ
-            <span>ДОЛЬШЕ ОДНОГО ЧАСА?</span>
+            <strong>ДОЛЬШЕ ОДНОГО ЧАСА?</strong>
           </div>
         </li>
         <li class="cause__item">
-          <img class="cause__item-img" src="images/section-cause/woman-2.png" alt="" >
+          <img class="cause__item-img" src="images/section-cause/woman-2.png" alt="">
           <div class="cause__item-text">
-            МАСТЕР, КОТОРЫЙ ХОЧЕТ <span>ПОМЕНЯТЬ МЫШЛЕНИЕ</span> О НАРАЩИВАНИИ РЕСНИЦ
+            МАСТЕР, КОТОРЫЙ ХОЧЕТ <strong>ПОМЕНЯТЬ МЫШЛЕНИЕ</strong> О НАРАЩИВАНИИ РЕСНИЦ
           </div>
         </li>
         <li class="cause__item">
-          <img class="cause__item-img" src="images/section-cause/woman-3.png" alt="" >
+          <img class="cause__item-img" src="images/section-cause/woman-3.png" alt="">
           <div class="cause__item-text">
-            СПЕЦИАЛИСТ, КОТОРОМУ НЕОБХОДИМЫ <span>ПОДДЕРЖКА И КОМЬЮНИТИ РЯДОМ</span>
+            СПЕЦИАЛИСТ, КОТОРОМУ НЕОБХОДИМЫ <strong>ПОДДЕРЖКА И КОМЬЮНИТИ РЯДОМ</strong>
           </div>
         </li>
       </ul>
@@ -92,17 +101,375 @@
         <p class="cause__footer-text">
           ЗАРЯДИСЬ ЭНЕРГИЕЙ И СТАНЬ САМЫМ ЗНАМЕНИТЫМ МАСТЕРОМ СВОЕГО ГОРОДА
         </p>
-        <a class="btn" href="#">ЗАПИСАТЬСЯ</a>
+        <a class="btn" href="#section-tariff">ЗАПИСАТЬСЯ</a>
       </footer>
+      <div class="super-woman section-cause__img">
+        <img src="/images/common/woman-supervillain.png" alt="">
+      </div>
     </div>
   </section>
 
+  <section class="section section--accent section-about" id="section-about">
+    <div class="container">
+      <h2 class="section__title">
+        НА ИНТЕНСИВЕ ТЕБЯ ЖДЕТ
+      </h2>
 
+      <ul class="bonuses__list section-about__bonuses">
+        <li class="bonus">
+          <img class="bonus__img" src="/images/section-about/bonus-1.svg" alt="">
+          <div class="bonus__text">
+            <strong>9 УРОКОВ</strong> С ДОМАШНИМИ ЗАДАНИЯМИ И ПРОВЕРКОЙ
+          </div>
+        </li>
+        <li class="bonus">
+          <img class="bonus__img" src="/images/section-about/bonus-2.svg" alt="">
+          <div class="bonus__text">
+            <strong>МАСТЕРМАИНДЫ</strong> С ОБСУЖДЕНИЕМ ВОПРОСОВ
+          </div>
+        </li>
+        <li class="bonus">
+          <img class="bonus__img" src="/images/section-about/bonus-3.svg" alt="">
+          <div class="bonus__text">
+            ДЕЛЕНИЕ НА ПАРЫ И СОЗДАНИЕ <strong>АКТИВНОГО КОМЬЮНИТИ</strong>
+          </div>
+        </li>
+        <li class="bonus">
+          <img class="bonus__img" src="/images/section-about/bonus-4.svg" alt="">
+          <div class="bonus__text">
+            <strong>ГЛАВНЫЙ ПРИЗ ЗА АКТИВНОСТЬ НА ИНТЕНСИВЕ</strong>
+          </div>
+        </li>
+        <li class="bonus">
+          <img class="bonus__img" src="/images/section-about/bonus-4.svg" alt="">
+          <div class="bonus__text">
+            <strong>ПРИЗ ЗА РАБОТУ ДЛЯ САМОЙ АКТИВНОЙ ПАРЫ</strong>
+          </div>
+        </li>
+        <li class="bonus">
+          <img class="bonus__img" src="/images/section-about/bonus-4.svg" alt="">
+          <div class="bonus__text">
+            <strong>ПРИЗ СРЕДИ СТОРИС С ХЕШТЕГОМ ИНТЕНСИВА</strong>
+          </div>
+        </li>
+      </ul>
 
+      <h2 class="section__title section-about__title">
+        И, КОНЕЧНО, ЮЛИЯ ВОРМАН
+      </h2>
 
+      <div class="section-about__content">
+        <div class="section-about__body">
+          <p>
+            <strong>БОЛЬШЕ 12 ЛЕТ</strong> Я НАРАЩИВАЮ РЕСНИЦЫ <strong>ЗА 1 ЧАС</strong> . В ПРОФЕССИ Я РАЗВИВАЮСЬ
+            <strong>С 2008 ГОДА</strong> И, ПУТЕМ ПРОБ И ОШИБОК, ДОШЛА <strong>ДО ИДЕАЛЬНЫХ РЕЗУЛЬТАТОВ!</strong> МОИ
+            ПРОФЕССИОНАЛЬНЫЕ НАВЫКИ СДЕЛАЛИ МЕНЯ <strong>МНОГОКРАТНЫМ ПРИЗЕРОМ</strong> , А ПОТОМ И <strong>СУДЬЕЙ
+              МЕЖДУНАРОДНЫХ ЧЕМПИОНАТОВ ПО НАРАЩИВАНИЮ РЕСНИЦ</strong>
+          </p>
+          <p>
+            Я ОСНОВАЛА <strong>СЕТЬ САЛОНОВ VERSUS</strong> И ТЕПЕРЬ АКТИВНО ЗАПУСКАЮ СВОИ ОБУЧЕНИЯ <strong>ПО
+              СКОРОМТНОМУ НАРАЩИВАНИЮ.</strong> ЛОМАЮ СТЕРЕОТИПЫ, <strong> УЧУ МАСТЕРОВ ПОДНИМАТЬ ЧЕКИ И ЗАРАБАТЫВАТЬ
+              МИЛЛИОНЫ.</strong>
+          </p>
+          <ul class="section-about__body-ul">
+            <li class="section-about__body-li">
+              <strong>1 ЧАС</strong>
+              <p>САМОЕ БЫСТРОЕ 5D</p>
+            </li>
+            <li class="section-about__body-li">
+              <strong>12+ ЛЕТ</strong>
+              <p>РАБОТАЮ СВОЕЙ СФЕРЕ</p>
+            </li>
+            <li class="section-about__body-li">
+              <strong>1+ МЛН</strong>
+              <p>В МЕСЯЦ ДЕЛАЮ НА РЕСНИЦАХ</p>
+            </li>
+            <li class="section-about__body-li">
+              <strong>100000+</strong>
+              <p>КЛИЕНТОК Я ОСЧАСТЛИВИЛА</p>
+            </li>
+          </ul>
+          <p>
+            ВСЕ МОИ НАРАЩИВАНИЯ Я ДЕЛАЮ ЗА 1 - МАКСИМУМ 1.5 ЧАСА <strong> <br> ХОЧЕШЬ ТАКЖЕ? СМОТРИ ПРОГРАММУ И
+              ЗАПИСЫВАЙСЯ НА ИНТЕНСИВ</strong>
+          </p>
+        </div>
+        <div class="section-about__img">
+          <img src="/images/section-about/photo.png" alt="Фото довольной клиентки">
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="section section-program" id="section-program">
+    <div class="container section-program__container">
+      <h2 class="section__title">
+        ВОТ ТАКАЯ ПРОГРАММА ИНТЕНСИВА
+      </h2>
+      <div class="program__list">
+        <details class="accordeon">
+          <summary class="accordeon__title">УРОК 1. ВВОДНЫЙ УРОК</summary>
+          <ol class="accordeon__list">
+            <li class="accordeon__item">МОЯ ИСТОРИЯ</li>
+            <li>РАЗРЫВ ШАБЛОНОВ В НАРАЩИВАНИИ</li>
+          </ol>
+        </details>
+        <details class="accordeon">
+          <summary class="accordeon__title">УРОК 2. СКОРОСТНОЕ СНЯТИЕ РЕСНИЦ</summary>
+          <ol class="accordeon__list">
+            <li class="accordeon__item">КАК ДЕЛАЮТ ВСЕ. И КАК «ТИПО» ПРАВИЛЬНО, А МОЖНО ПО ДРУГОМУ. И СДЕЛАТЬ ЭТО БЫСТРО
+            </li>
+            <li>ПОЧЕМУ ВСЕ НАВЯЗЫВАЮТ ПЕНКУ И БЕГОТНЮ К УМЫВАЛЬниКУ.</li>
+          </ol>
+        </details>
+      </div>
 
-  <footer class="footer-page"></footer>
+      <div class="program-action">
+        <a class="btn" href="#section-tariff">Записаться</a>
+        <div class="program-action__text">
+          <p>Все еще думаешь?</p>
+          <p>А места разбирают уже сейчас</p>
+        </div>
+      </div>
+      <div class="super-woman section-program__img">
+        <img src="/images/common/woman-supervillain.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--accent section-tariff" id="section-tariff">
+    <div class="container">
+      <h2 class="section__title">
+        ТАРИФЫ УЧАСТИЯ
+      </h2>
+
+      <ul class="tariff-cards js-tariff">
+        <li class="tariff-card">
+          <img class="tariff-card__icon" src="/images/section-tariff/tarif-1.png" alt="">
+          <h3 class="tariff-card__title">
+            LITE (САМОСТОЯТЕЛЬНЫЙ)
+          </h3>
+          <ul class="tariff-card__ul">
+            <li class="tariff-card__li"><span>+</span> 9 ПОДРОБНЫХ УРОКОВ</li>
+            <li class="tariff-card__li"><span>+</span> 9 ЗАДАНИЙ НА ПОСТРОЕНИЕ СКОРОСТНОЙ РАБОТЫ</li>
+            <li class="tariff-card__li"><span>+</span> ЧАТ С ЕДИНОМЫШЛЕННИКАМИ</li>
+            <li class="tariff-card__li"><span>+</span> ДОПОЛНИТЕЛЬНЫЙ УРОК: <br> ЛИЧНЫЙ БРЕНД ДЛЯ БЬЮТИ-СФЕРЫ</li>
+            <li class="tariff-card__li"><span>-</span> 2 МАСТЕРМАИНДА С ЮЛИЕЙ ВОРМАН</li>
+            <li class="tariff-card__li"><span>-</span> ЛИЧНОЕ ВЕДЕНИЕ ОТ ЮЛИИ ВОРМАН</li>
+          </ul>
+          <footer class="tariff-card__footer">
+            <strong class="tariff-card__duration">
+              ДЛИТЕЛЬНОСТЬ: 14 ДНЕЙ
+            </strong>
+            <div class="tariff-card__price-wrap">
+              <div class="tariff-card__price-condition">
+                КАЖДЫЕ <strong>20 ОПЛАТ</strong> + 1111 Р.
+              </div>
+              <span class="tariff-card__price">6666 Р.</span>
+            </div>
+            <button class="btn tariff-card__btn" data-popup="popup-pay">ОПЛАТИТЬ</button>
+          </footer>
+        </li>
+        <li class="tariff-card">
+          <img class="tariff-card__icon" src="/images/section-tariff/tarif-2.png" alt="">
+          <h3 class="tariff-card__title">
+            PLUS (С КУРАТОРОМ)
+          </h3>
+          <ul class="tariff-card__ul">
+            <li class="tariff-card__li"><span>+</span> 9 ПОДРОБНЫХ УРОКОВ</li>
+            <li class="tariff-card__li"><span>+</span> 9 ЗАДАНИЙ НА ПОСТРОЕНИЕ СКОРОСТНОЙ РАБОТЫ</li>
+            <li class="tariff-card__li"><span>+</span> ЧАТ С ЕДИНОМЫШЛЕННИКАМИ</li>
+            <li class="tariff-card__li"><span>+</span> ДОПОЛНИТЕЛЬНЫЙ УРОК: <br> ЛИЧНЫЙ БРЕНД ДЛЯ БЬЮТИ-СФЕРЫ</li>
+            <li class="tariff-card__li"><span>+</span> 2 МАСТЕРМАИНДА С ЮЛИЕЙ ВОРМАН</li>
+            <li class="tariff-card__li"><span>-</span> ЛИЧНОЕ ВЕДЕНИЕ ОТ ЮЛИИ ВОРМАН</li>
+          </ul>
+          <footer class="tariff-card__footer">
+            <strong class="tariff-card__duration">
+              ДЛИТЕЛЬНОСТЬ: 14 ДНЕЙ
+            </strong>
+            <div class="tariff-card__price-wrap">
+              <div class="tariff-card__price-condition">
+                КАЖДЫЕ <strong>20 ОПЛАТ</strong> + 1111 Р.
+              </div>
+              <span class="tariff-card__price">11111 Р.</span>
+            </div>
+            <button class="btn tariff-card__btn" data-popup="popup-pay">ОПЛАТИТЬ</button>
+          </footer>
+        </li>
+        <li class="tariff-card">
+          <img class="tariff-card__icon" src="/images/section-tariff/tarif-3.png" alt="">
+          <h3 class="tariff-card__title">
+            BOMBA (С ЮЛИЕЙ ВОРМАН)
+          </h3>
+          <ul class="tariff-card__ul">
+            <li class="tariff-card__li"><span>+</span> 9 ПОДРОБНЫХ УРОКОВ</li>
+            <li class="tariff-card__li"><span>+</span> 9 ЗАДАНИЙ НА ПОСТРОЕНИЕ СКОРОСТНОЙ РАБОТЫ</li>
+            <li class="tariff-card__li"><span>+</span> ЧАТ С ЕДИНОМЫШЛЕННИКАМИ</li>
+            <li class="tariff-card__li"><span>+</span> ДОПОЛНИТЕЛЬНЫЙ УРОК: <br> ЛИЧНЫЙ БРЕНД ДЛЯ БЬЮТИ-СФЕРЫ</li>
+            <li class="tariff-card__li"><span>+</span> 2 МАСТЕРМАИНДА С ЮЛИЕЙ ВОРМАН</li>
+            <li class="tariff-card__li"><span>+</span> ЛИЧНОЕ ВЕДЕНИЕ ОТ ЮЛИИ ВОРМАН</li>
+          </ul>
+          <footer class="tariff-card__footer">
+            <strong class="tariff-card__duration">
+              ДЛИТЕЛЬНОСТЬ: 14 ДНЕЙ
+            </strong>
+            <div class="tariff-card__price-wrap">
+              <div class="tariff-card__price-condition">
+                КАЖДЫЕ <strong>20 ОПЛАТ</strong> + 1111 Р.
+              </div>
+              <span class="tariff-card__price">33333 Р.</span>
+            </div>
+            <button class="btn tariff-card__btn" data-popup="popup-pay">ОПЛАТИТЬ</button>
+          </footer>
+        </li>
+      </ul>
+
+      <div class="tariff-action">
+        <div class="tariff-action__box">
+          <div class="tariff-action__img">
+            <img src="/images/section-about/bonus-4.svg" alt="">
+          </div>
+          <div class="tariff-action__text">
+            ИДЕТЕ НА ИНТЕНСИВ? ВЫЛОЖИТЕ ОБ ЭТОМ СТОРИС-ШАБЛОН С ОТМЕТКОЙ ЮЛИИ ВОРМАН И ВАС БУДЕТ ЖДАТЬ РОЗЫГРЫШ
+            ДОПОЛНИТЕЛЬНОГО ПОДАРКА!
+          </div>
+        </div>
+        <a class="btn btn--ghost tariff-action__btn"
+          href="https://drive.google.com/file/d/1A3LuYuWys8t551pB9eiFloMs3lvjW2vB/edit"
+          target="_blank">СТОРИС-ШАБЛОН</a>
+        <a class="tariff-action__link" href="https://www.instagram.com/uliavorman/?hl=ru"
+          target="_blank">@ULIAVORMAN</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-questions">
+    <div class="container section-questions__container">
+      <h2 class="section__title section-about__title">
+        А ТАКИЕ ВОПРОСЫ МОГУТ БЫТЬ У ВАС
+      </h2>
+      <div class="question__list">
+        <details class="accordeon">
+          <summary class="accordeon__title">Я ТОЧНО ВСЕМУ НАУЧУСЬ? У МЕНЯ ПОЛУЧИТСЯ?</summary>
+          <ol class="accordeon__list">
+            <li class="accordeon__item">МОЯ ИСТОРИЯ</li>
+            <li>РАЗРЫВ ШАБЛОНОВ В НАРАЩИВАНИИ</li>
+          </ol>
+        </details>
+        <details class="accordeon">
+          <summary class="accordeon__title">КАК Я БУДУ УЧИТЬСЯ СКОРОСТНОМУ НАРАЩИВАНИЮ ОНЛАЙН?</summary>
+          <ol class="accordeon__list">
+            <li class="accordeon__item">МОЯ ИСТОРИЯ</li>
+            <li>РАЗРЫВ ШАБЛОНОВ В НАРАЩИВАНИИ</li>
+          </ol>
+        </details>
+      </div>
+
+      <div class="questions-action">
+        <div class="questions-action__box">
+          <img class="questions-action__img" src="/images/common/telegram.svg" alt="">
+          <div class="questions-action__text">
+            <p>У ВАС ЕСТЬ ДРУГОЙ ВОПРОС?</p>
+            <p>НАПИШИТЕ МНЕ В ТЕЛЕГРАМ</p>
+          </div>
+        </div>
+        <a class="btn" href="https://t.me/UliaVorman" target="_blank">НАПИСАТЬ</a>
+      </div>
+      <div class="super-woman section-questions__img">
+        <img src="/images/common/woman-supervillain.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-page">
+    <div class="container footer-page__container">
+      <div class="footer-page__left">
+        <a class="footer-page__link" href="https://www.instagram.com/uliavorman/?hl=ru" target="_blank">ЮЛИЯ ВОРМАН</a>
+      </div>
+      <div class="footer-page__center">
+        <a class="footer-page__link" href="#section-top">НАВЕРХ</a>
+        <a class="footer-page__link footer-page__link--ttn" href="https://www.instagram.com/kemfetka/?hl=ru"
+          target="_blank">Design by @kemfetka</a>
+      </div>
+      <div class="footer-page__right">
+        <a class="footer-page__link" href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+        <a class="footer-page__link" href="#">ДОГОВОР-ОФЕРТА</a>
+        <a class="footer-page__link" href="#">СВЯЗАТЬСЯ С НАМИ</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- popup-menu -->
+  <div class="popup popup-menu">
+    <div class="popup__wrapper">
+      <div class="popup__inner">
+        <div class="popup__content popup__content--fluid popup__content--centered">
+          <button class="btn-close popup__btn-close popup-close" type="button" aria-label="Закрыть окно"></button>
+          <nav class="popup__mobile-menu mobile-menu">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link popup-close" href="#section-cause">
+                  ДЛЯ КОГО?
+                </a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link popup-close" href="#section-program">
+                  ЧТО БУДЕТ НА ИНТЕНСИВЕ?
+                </a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link popup-close" href="#section-about">
+                  О ЮЛИИ
+                </a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link popup-close" href="#section-tariff">
+                  ТАРИФЫ
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.popup-menu -->
+
+    <!-- popup-pay -->
+    <div class="popup popup-pay">
+      <div class="popup__wrapper">
+        <div class="popup__inner">
+          <div class="popup__content">
+            <button class="btn-close popup__btn-close popup-close" type="button" aria-label="Закрыть окно"></button>
+            <h2 class="popup__title">Интенсив по скоростному наращиванию ресниц. Тариф PLUS (личное ведение Юлии Ворман)</h2>
+            <div class="pay">
+                <form class="form form-send">
+                    <input class="pay-info-tariff" type="hidden" name="тариф">
+                    <input class="pay-info-price" type="hidden" name="цена">
+                    <input class="form__input" type="email" name="адрес" placeholder="Введите ваш эл. адрес" required>
+                    <input class="form__input" type="text" name="имя" placeholder="Введите ваше имя и фамилию" required>
+                    <input class="form__input" type="tel" name="телефон" placeholder="Введите ваш телефон" required>
+
+                    <p class="pay-info-text">
+                      * Курс можно оплатить по частям. При оплате нажмите на "частичную оплату".
+                    </p>
+                    <p class="pay-info-price">
+                      Интенсив по скоростному наращиванию ресниц. <br>
+                      <span class="pay-info-price__text js-tariff-title">LITE (САМОСТОЯТЕЛЬНЫЙ)</span>
+                      <span class="pay-info-price__value js-tariff-price">6666р.</span>
+                    </p>
+                    <label class="form-policy">
+                      <input class="" type="checkbox" checked required>
+                        Я согласен на обработку моих персональных данных в соответствии с <a class="form-policy__link" href="#">условиями</a>
+                    </label>
+                    <button class="btn form__btn" type="submit">Оплатить</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.popup-pay -->
 
   <script src="js/main.min.js"></script>
 </body>

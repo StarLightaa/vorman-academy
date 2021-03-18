@@ -1,0 +1,30 @@
+.super-woman {
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-25%);
+    max-width: 243px;
+    object-fit: cover;
+
+    @include media-max($breakpoint-md) {
+      position: relative;
+      display: block;
+      transform: translateY(45px);
+      margin: 0 auto;
+    }
+    @include media-max($breakpoint-sm) {
+      max-width: 215px;
+    }
+  }
+}
+
+.super-woman.section-program__img,
+.super-woman.section-questions__img {
+  img {
+    @include media-min($breakpoint-lg) {
+      right: 125px;
+    }
+  }
+}

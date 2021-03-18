@@ -1,5 +1,6 @@
 .btn {
   display: inline-block;
+  text-align: center;
   width: 245px;
   max-width: 100%;
   text-decoration: none;
@@ -12,7 +13,12 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 1.31;
+  text-transform: uppercase;
   transition: transform $transition-time, background-color $transition-time;
+
+  @include media-max($breakpoint-sm) {
+    width: 300px;
+  }
 
   &:hover, &:focus {
     background-color: darken($color: $color-accent-light, $amount: 7%);

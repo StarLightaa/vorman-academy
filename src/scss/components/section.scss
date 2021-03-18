@@ -1,5 +1,13 @@
 .section {
   padding: 180px 0;
+  @include media-max($breakpoint-md) {
+    padding: 90px 0;
+  }
+
+  &--accent {
+    background-color: $color-accent;
+    color: $color-white;
+  }
 
   &__title {
     margin: 0;
@@ -11,5 +19,22 @@
     &--accent {
       color: #504178;
     }
+
+    @include media-max($breakpoint-md) {
+      font-size: 40px;
+      line-height: 1.5;
+    }
+    @include media-max($breakpoint-sm) {
+      font-size: 30px;
+      margin-bottom: 33px;
+    }
+  }
+}
+
+.section-cause,
+.section-program,
+.section-questions{
+  @include media-max($breakpoint-md) {
+    padding-bottom: 45px;
   }
 }

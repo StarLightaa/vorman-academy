@@ -1,0 +1,27 @@
+.program {
+  &__list {
+    margin-bottom: 50px;
+  }
+  &-action {
+    display: flex;
+    column-gap: 40px;
+    row-gap: 30px;
+    @include media-max($breakpoint-sm) {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__text {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: none;
+
+      @include media-max($breakpoint-sm) {
+        order: -1;
+        text-align: center;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

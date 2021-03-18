@@ -19,6 +19,8 @@ const server = (callback) => {
     ],
     open: false,
     notify: false,
+    online: true,
+    tunnel: 'test',
   });
 
   callback();

@@ -1,17 +1,3 @@
-.section-cause__container {
-  position: relative;
-  &::after {
-    content: '';
-    background-image: url('/images/common/woman-supervillain.png');
-    position: absolute;
-    bottom: 0;
-    right: 40px;
-    transform: translateY(75%);
-    width: 243px;
-    height: 243px;
-  }
-}
-
 .cause {
   &__items {
     margin: 0;
@@ -19,17 +5,25 @@
     list-style: none;
     display: flex;
     column-gap: 65px;
+    row-gap:40px;
     margin-bottom: 40px;
+    @include media-max($breakpoint-md) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
 
-  &__item:first-of-type {
-    margin-left: 28px;
-  }
   &__item {
     padding: 30px 30px 30px 50px;
     border: 3px solid $color-accent;
     border-radius: 30px;
     position: relative;
+    max-width: 370px;
+
+    @include media-max($breakpoint-md) {
+      padding: 30px;
+    }
 
     &-img {
       position: absolute;
@@ -38,27 +32,58 @@
       width: 89px;
       height: 89px;
       transform: translateX(-50%);
+      @include media-max($breakpoint-md) {
+        width: 61px;
+        height: 61px;
+        transform: translate(-10px, -90%);
+      }
     }
 
     &-text {
       font-size: 16px;
       font-weight: 500;
-      span {
+      strong {
         font-weight: 700;
       }
+    }
+  }
+
+  &__item:first-of-type {
+    @include media-min($breakpoint-md) {
+      margin-left: 28px;
+    }
+  }
+
+  &__item:nth-child(even) &__item-img {
+    @include media-max($breakpoint-md) {
+      left: 100%;
+      transform: translate(-100%, -90%);
     }
   }
 }
 
 .cause__footer {
   display: flex;
+  position: relative;
+  z-index: 1;
+  @include media-max($breakpoint-md) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &-text {
     margin: 0;
     display: inline-block;
     margin-right: 33px;
-    width: 511px;
+    width: 450px;
     max-width: 100%;
     font-size: 20px;
     font-weight: 700;
+    @include media-max($breakpoint-md) {
+      margin: 0 0 34px 0;
+      width: 370px;
+      max-width: 100%;
+      text-align: center;
+    }
   }
 }
